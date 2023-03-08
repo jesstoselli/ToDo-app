@@ -28,33 +28,7 @@ interface ToDo {
 }
 
 export function Home() {
-  const [toDos, setToDos] = useState<ToDo[]>([
-    {
-      id: "0b145531-561d-48bb-8824-8e747096c8bf",
-      text: "Lavar roupa de cama",
-      done: true,
-    },
-    {
-      id: "43fa290c-7185-4b85-ac05-14c5deebc2ae",
-      text: "Guardar roupas",
-      done: true,
-    },
-    {
-      id: "dcd4d02d-c050-4afb-b987-99acf025624c",
-      text: "Estudar alemão",
-      done: false,
-    },
-    {
-      id: "68174f4e-7ace-4254-a752-8c2f281ece27",
-      text: "Meditação",
-      done: false,
-    },
-    {
-      id: "25b661eb-dfc2-4d2f-934f-a3aac00bf61a",
-      text: "1200ml de água",
-      done: false,
-    },
-  ]);
+  const [toDos, setToDos] = useState<ToDo[]>([]);
   const [newToDoText, setNewToDoText] = useState("");
 
   function handleAddToDo() {
