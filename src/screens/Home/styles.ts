@@ -84,4 +84,8 @@ export const styles = StyleSheet.create({
     fontFamily: "Inter_400Regular",
     color: "#808080",
   },
+  toDosList: {
+    marginHorizontal: 24,
+    marginTop: 20,
+  },
 });
