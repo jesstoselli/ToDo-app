@@ -23,10 +23,23 @@ export const styles = StyleSheet.create({
   input: {
     height: 54,
     backgroundColor: "#262626",
+    color: "#F2F2F2",
     borderRadius: 6,
     flex: 1,
     borderWidth: 1,
     borderColor: "#0D0D0D",
+    padding: 16,
+    fontSize: 16,
+    fontFamily: "Inter_400Regular",
+  },
+  focusedInput: {
+    height: 54,
+    backgroundColor: "#262626",
+    color: "#F2F2F2",
+    borderRadius: 6,
+    flex: 1,
+    borderWidth: 1,
+    borderColor: "#5E60CE",
     padding: 16,
     fontSize: 16,
     fontFamily: "Inter_400Regular",
@@ -85,7 +98,6 @@ export const styles = StyleSheet.create({
     color: "#808080",
   },
   toDosList: {
-    marginHorizontal: 24,
     marginTop: 20,
   },
 });

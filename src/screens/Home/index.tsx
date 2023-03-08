@@ -28,6 +28,7 @@ interface ToDo {
 }
 
 export function Home() {
+  const [isActive, setIsActive] = useState(false);
   const [toDos, setToDos] = useState<ToDo[]>([]);
   const [newToDoText, setNewToDoText] = useState("");
 
@@ -96,9 +97,11 @@ export function Home() {
       <View style={styles.mainContainer}>
         <View style={styles.textInputContainer}>
           <TextInput
-            style={styles.input}
+            style={isActive ? styles.focusedInput : styles.input}
             placeholder={"Adicione uma nova tarefa"}
             placeholderTextColor={"#808080"}
+            onFocus={() => setIsActive(true)}
+            onBlur={() => setIsActive(false)}
             onChangeText={setNewToDoText}
             value={newToDoText}
             maxLength={82}
